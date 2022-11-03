@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="test" method="get" action="https://fom.in.ua/echo">
+        <h2>Выбрать автомобиль:</h2>
+        <p><b>Цена, грн:</b><br>
+        от <input type="text" name="min-cena" value="0">
+        до <input type="text" name="max-cena" value="1000000"><br>
+        </p>
+        <p><b>Год выпуска:</b><br>
+        от <input type="text" name="min-god" value="1950"> до <input type="text" name="max-god" value="2022"></p>
+        <p><b>Тип кузова:</b><br>
+        <label>
+            <input type="radio" name="tipkuzova" value="Седан"> Седан
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tipkuzova" value="Хэтчбек"> Хэтчбек
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tipkuzova" value="Универсал"> Универсал
+        </label>
+        <br>
+        </p>
+        <p><b>Состояние:</b><br>
+        <select name="marcaavto[]" multiple="multiple" size="3"> 
+            <option value="Битая">Битая</option>
+            <option value="В кредите">В кредите</option>
+            <option value="Нерастаможенная">Нерастаможенная</option>
+        </select><br>
+        </p>
+        <p><b>Страна производитель:</b><br>
+        <label> 
+            <input type="radio" name="strana" value="Италия"> Италия
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="strana" value="Япония"> Япония
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="strana" value="Германия"> Германия
+        </label>
+        <br>
+        </p>
+        <p><b>Марка автомобиля:</b><br>
+        <label>
+            <input type="radio" name="marca_avto" value="Мазда"> Мазда
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="marca_avto" value="Лексус"> Лексус
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="marca_avto" value="Мерседес"> Мерседес
+        </label>
+        <br>
+        </p>
+        <p><b>Тип топлива:</b><br>
+        <label> 
+            <input type="radio" name="tip_topliva" value="Бензин"> Бензин
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tip_topliva" value="Дизельное топливо"> Дизельное топливо
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tip_topliva" value="Газ"> Газ
+        </label>
+        <br>
+        </p>
+        <p><b>Цвет:</b><br>
+        <label> 
+            <input type="radio" name="color" value="Белый"> Белый
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="color" value="Чёрный"> Чёрный
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="color" value="Серый"> Серый
+        </label>
+        <br>
+        </p>
+        <p><b>Тип коробки передач:</b><br>
+        <label>
+            <input type="radio" name="transmission" value="ручная"> ручная
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="transmission" value="автоматическая"> автоматическая
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="transmission" value="полуавтоматическая"> полуавтоматическая
+        </label>
+        <br>
+        </p>
+        <p><b>Комплектация:</b><br>
+        <label>
+            <input type="radio" name="equipment" value="стандартная"> стандартная
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="equipment" value="комфорт"> комфорт
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="equipment" value="бизнес"> бизнес
+        </label>
+        <br>
+        </p>
+        <p><input type="submit" value="Найти">
+        <input type="reset" value="Очистить">
+        </p>
+    </form>
+</body>
+</html>
